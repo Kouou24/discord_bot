@@ -11,8 +11,8 @@ import os
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
 
-SEND_HOUR = 10        # 每天幾點發送（24小時制）
-SEND_MINUTE = 45      # 幾分發送
+SEND_HOUR = 11        # 每天幾點發送（24小時制）
+SEND_MINUTE = 00      # 幾分發送
 TIMEZONE = "Asia/Taipei"
 
 FRIENDS = [
