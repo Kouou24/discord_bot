@@ -12,7 +12,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
 
 SEND_HOUR = 10        # 每天幾點發送（24小時制）
-SEND_MINUTE = 35      # 幾分發送
+SEND_MINUTE = 45      # 幾分發送
 TIMEZONE = "Asia/Taipei"
 
 FRIENDS = [
@@ -97,8 +97,8 @@ def format_message(found_players: list, not_found: list) -> str:
         )
     
     lines.append("```")
-    lines.append(f"🏆 今日冠軍：**{champion['name']}** ({champion['job']} | Lv.{champion['level']})")
-    lines.append(f"　 今日經驗：**{format_exp(champion['dailyGain'])}**")
+    lines.append(f"🏆 昨天的捲王：**{champion['name']}** ({champion['job']} | Lv.{champion['level']})")
+    lines.append(f"　 總經驗：**{format_exp(champion['dailyGain'])}**")
     
     if not_found:
         lines.append(f"\n⚠️ 找不到以下角色：{', '.join(f'`{n}`' for n in not_found)}")
