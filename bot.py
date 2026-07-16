@@ -4,6 +4,8 @@ import requests
 import asyncio
 from datetime import datetime
 import pytz
+import os
+
 
 # ========== 設定區 ==========
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
